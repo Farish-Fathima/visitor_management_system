@@ -1,0 +1,91 @@
+.app {
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* Form popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form box */
+.form-container {
+  background: white;
+  width: 400px;
+  max-width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #2563eb;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Search and table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 25px;
+}
+
+.table-container input {
+  padding: 10px;
+  margin: 15px;
+  width: 300px;
+  max-width: 90%;
+}
+
+.visitor-table {
+  width: 100%;
+  min-width: 1200px;
+  border-collapse: collapse;
+}
+
+.visitor-table th,
+.visitor-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.visitor-table th {
+  background: lightgray;
+}
+
+.visitor-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
