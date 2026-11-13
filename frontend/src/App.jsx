@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 import './App.css'
 
@@ -139,13 +138,8 @@ function App() {
               <input type="text" name="flatNumber" placeholder="Flat Number" defaultValue={visitors.find(v => v.serialNo === editId)?.flatNumber || ''} required />
 
               <label>Tenant Permanent Address</label>
-
-              <input
-                type="text"
-                name="tenantAddress"
-                defaultValue={visitors.find(v => v.serialNo === editId)?.tenantAddress || 'Blossom Residency, Anna Nagar, Chennai, Tamil Nadu - 600040'}
-                readOnly
-              />
+               <input type="text" name="tenantAddress" value="Blossom Residency, Anna Nagar, Chennai, Tamil Nadu - 600040"
+               readOnly/>
 
               <button type="submit">
                 {editId ? 'Update Visitor' : 'Submit Visitor'}
